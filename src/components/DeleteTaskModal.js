@@ -12,6 +12,8 @@ const DeleteTaskModal = ({ taskName, onDeleteConfirm, onCancel }) => {
             </div>
         </div>
     );
+
+
 };
 
 export default DeleteTaskModal;
