@@ -80,8 +80,8 @@ const TaskForm = ({ task, onSave, onCancel }) => {
                 </label>
 
                 <div className="form-buttons">
-                    <button type="submit">Save</button>
-                    <button type="button" onClick={onCancel}>Cancel</button>
+                    <button style={{ backgroundColor: 'green', color: 'black', padding: '5px 10px', marginRight: '5px' }} type="submit">Save</button>
+                    <button style={{ backgroundColor: 'yellow', color: 'black', padding: '5px 10px', marginRight: '5px' }} type="button" onClick={onCancel}>Cancel</button>
                 </div>
             </form>
         </div>

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import TaskList from './components/TaskList';
 import TaskForm from './components/TaskForm';
 import DeleteTaskModal from './components/DeleteTaskModal';
-import './App.css'
+import './App.css';
 
 const App = () => {
   const [tasks, setTasks] = useState([
@@ -46,8 +46,10 @@ const App = () => {
 
   return (
       <div className="App">
-          <h1>Tasks</h1>
-          <button onClick={() => setFormVisible(true)}>New Task</button>
+         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+          <h1 >Tasks</h1>
+          <button  style={{  backgroundColor: 'yellow', color: 'black', padding: '5px 10px',  marginLeft: 'auto' }} onClick={() => setFormVisible(true)}>New Task</button>
+          </div>
           <TaskList tasks={tasks} onEdit={handleEdit} onDelete={handleDelete} />
 
           {isFormVisible && (

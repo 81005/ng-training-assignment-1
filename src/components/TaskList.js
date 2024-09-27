@@ -23,8 +23,8 @@ const TaskList = ({ tasks, onEdit, onDelete }) => {
                             <td>{task.priority}</td>
                             <td>{task.comments}</td>
                             <td>
-                                <button onClick={() => onEdit(task)}>Edit</button>
-                                <button onClick={() => onDelete(task)}>Delete</button>
+                                <button style={{ backgroundColor: 'yellow', color: 'black', padding: '5px 10px', marginRight: '5px' }} onClick={() => onEdit(task)}  >Edit</button>
+                                <button style={{ backgroundColor: 'yellow', color: 'black', padding: '5px 10px', marginRight: '5px' }} onClick={() => onDelete(task)}>Delete</button>
                             </td>
                         </tr>
                     ))}
